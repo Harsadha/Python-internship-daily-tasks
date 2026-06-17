@@ -1,3 +1,11 @@
+# DAILY TASK- WEEK 2- DAY 5
+'''
+✓ Create utils.py with helper functions (age from DOB, random password generator, file size checker)
+✓ Import and use all in main.py
+✓ Set up a clean virtual environment for the project
+✓ Generate requirements.txt with pip freeze
+✓ Commit utils.py and requirements.txt to GitHub'''
+
 from datetime import datetime
 import random
 import string
