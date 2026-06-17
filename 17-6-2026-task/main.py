@@ -1,5 +1,3 @@
-# main.py
-
 import os
 import sys
 
@@ -9,12 +7,11 @@ from utils import (
     file_size_checker
 )
 
-
 def main():
     print("Current OS:", os.name)
     print("Python Version:", sys.version)
 
-    dob = "2002-05-15"
+    dob = "01-08-2005"
     age = calculate_age(dob)
 
     print(f"Age for DOB {dob}: {age}")
@@ -24,7 +21,6 @@ def main():
 
     size = file_size_checker("utils.py")
     print("utils.py size:", size)
-
 
 if __name__ == "__main__":
     main()
