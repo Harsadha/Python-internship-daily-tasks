@@ -11,12 +11,13 @@ def main():
     print("Current OS:", os.name)
     print("Python Version:", sys.version)
 
-    dob = "01-08-2005"
+    name = input("Please enter your name:")
+    dob = input("Enter your date of birth in DD-MM-YYYY format:")
     age = calculate_age(dob)
+    print(f"{name}'s age for DOB {dob} is: {age}")
 
-    print(f"Age for DOB {dob}: {age}")
-
-    password = generate_password(12)
+    length = int(input("Please enter the length of the password you want to generate:"))
+    password = generate_password(length)
     print("Generated Password:", password)
 
     size = file_size_checker("utils.py")
