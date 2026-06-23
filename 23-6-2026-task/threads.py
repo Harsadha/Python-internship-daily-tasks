@@ -63,5 +63,3 @@ with ThreadPoolExecutor(max_workers=5) as executor:
     executor.map(fetch,urls)
 
 print("Finished writing to the log.")
-
-# pytest suite for bankaccount class with parametrize
