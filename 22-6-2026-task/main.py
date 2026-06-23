@@ -1,4 +1,4 @@
-# DAILY TASK
+# DAILY TASK- WEEK 3- DAY 3
 '''
 ✓ Call jsonplaceholder.typicode.com/users — GET,POST, PUT, DELETE
 ✓ Save results to api_results.json
