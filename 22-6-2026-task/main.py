@@ -36,9 +36,12 @@ def create_user():
     url = f"{BASE_URL}/users"
     name = input("Enter Name: ").strip()
     email = input("Enter Email: ").strip()
-    if not name:
+    import re
+    name_pattern = r'^[A-Za-z]+$'
+    email_pattern = r'^[A-Za-z0-9_+#.-]+@[A-Za-z0-9_+#.-]+\.[A-Za-z0-9]{2,}$'
+    if not re.fullmatch(name_pattern,name):
         raise ValueError("Name cannot be empty.")
-    if "@" not in email:
+    if not re.fullmatch(email_pattern,email):
         raise ValueError("Invalid email.")
     payload = {
         "name": name,
