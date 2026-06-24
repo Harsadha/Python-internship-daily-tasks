@@ -1,0 +1,5 @@
+.env
+__pycache__
+automation.log
+sales_summary.csv
+report.html

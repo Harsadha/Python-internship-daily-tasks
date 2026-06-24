@@ -1,0 +1,38 @@
+[
+    {
+        "product": "Laptop",
+        "department": "Electronics",
+        "quantity": 2,
+        "price": 50000
+    },
+    {
+        "product": "Phone",
+        "department": "Electronics",
+        "quantity": 3,
+        "price": 30000
+    },
+    {
+        "product": "Mouse",
+        "department": "Electronics",
+        "quantity": 10,
+        "price": 500
+    },
+    {
+        "product": "Shirt",
+        "department": "Fashion",
+        "quantity": 20,
+        "price": 1000
+    },
+    {
+        "product": "Jeans",
+        "department": "Fashion",
+        "quantity": 15,
+        "price": 2000
+    },
+    {
+        "product": "Rice",
+        "department": "Groceries",
+        "quantity": 50,
+        "price": 100
+    }
+]
