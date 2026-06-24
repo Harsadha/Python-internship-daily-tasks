@@ -93,7 +93,7 @@ def generate_html_report(total_sales,top_products,department_summary):
         html += f"""
         <tr>
             <td>{dept}</td>
-            <td>₹ {sales}</td>
+            <td>Rs. {sales}</td>
         </tr>
         """
 
