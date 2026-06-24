@@ -28,7 +28,6 @@ def load_sales_data(file_path):
     with open(file_path,"r") as file:
         return json.load(file)
 
-
 @timer
 @logger
 def calculate_total_sales(data):
@@ -41,7 +40,6 @@ def get_top_products(data):
     for item in data:
         revenue[item["product"]] += (item["quantity"]* item["price"])
     return sorted( revenue.items(),key=lambda x: x[1],reverse=True)[:5]
-
 
 @timer
 @logger
@@ -56,7 +54,7 @@ def get_department_summary(data):
 def generate_csv(summary):
     csv_file = "sales_summary.csv"
     with open(csv_file,"w",newline="",encoding="utf-8") as file:
-        writer = csv.writer(file)
+        writer = csv.writer(file) 
         writer.writerow( ["Department","Sales"])
         for dept, sales in summary.items():
             writer.writerow([dept,sales])
@@ -79,7 +77,7 @@ def generate_html_report(total_sales,top_products,department_summary):
     <ul>
     """
     for product, revenue in top_products:
-        html += (f"<li>{product} - ₹ {revenue}</li>")
+        html += (f"<li>{product} - Rs. {revenue}</li>")
 
     html += "</ul>"
     html += """
