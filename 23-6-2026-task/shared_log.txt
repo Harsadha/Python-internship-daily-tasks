@@ -3,3 +3,13 @@ https://jsonplaceholder.typicode.com/todos->200
 https://jsonplaceholder.typicode.com/posts->200
 https://jsonplaceholder.typicode.com/comments->200
 https://jsonplaceholder.typicode.com/users->200
+https://jsonplaceholder.typicode.com/posts->200
+https://jsonplaceholder.typicode.com/todos->200
+https://jsonplaceholder.typicode.com/users->200
+https://jsonplaceholder.typicode.com/albums->200
+https://jsonplaceholder.typicode.com/comments->200
+https://jsonplaceholder.typicode.com/users->200
+https://jsonplaceholder.typicode.com/todos->200
+https://jsonplaceholder.typicode.com/posts->200
+https://jsonplaceholder.typicode.com/albums->200
+https://jsonplaceholder.typicode.com/comments->200
