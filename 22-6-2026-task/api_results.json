@@ -232,12 +232,12 @@
         }
     ],
     "POST": {
-        "name": "Harshu",
+        "name": "Harsadha",
         "email": "harshu@gmail.com",
         "id": 11
     },
     "PUT": {
-        "name": "Surthi",
+        "name": "Sruthi",
         "id": 1
     },
     "DELETE": {
