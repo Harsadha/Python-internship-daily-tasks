@@ -1,4 +1,5 @@
 from models import Employee, Department
+from sqlalchemy.exc import IntegrityError
 import re
 
 def add_department(session, name):
@@ -16,7 +17,11 @@ def add_employee(session, name,dept_id):
         raise ValueError(f"Department with ID {dept_id} does not exist.")
     employee = Employee(emp_name=name,dept_id = dept_id)
     session.add(employee)
-    session.commit()
+    try:
+        session.commit()
+    except IntegrityError:
+        session.rollback()
+        raise ValueError("Failed to add employee due to a database constraint.")
     return employee
 
 def list_departments(session):
