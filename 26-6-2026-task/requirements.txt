@@ -1,0 +1,3 @@
+# pg_ctl -D "C:\Program Files\PostgreSQL\18\data" start--> use this to start the server
+# psql -U postgres -> to start postgresql
+psycopg2-binary
