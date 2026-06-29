@@ -15,5 +15,5 @@ class Employee(Base):
     emp_id = Column( Integer, primary_key=True)
     emp_name = Column( String(100), nullable=False)
     dept_id = Column(Integer,ForeignKey("departments.dept_id"))
-    # 1(employee) to 1(department) relationship
+    # many(employees) to 1(department) relationship
     department = relationship("Department",back_populates="employees")
