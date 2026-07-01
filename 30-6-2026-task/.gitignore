@@ -1,0 +1,6 @@
+.env
+__pycache__
+*.pyc
+employee_data.csv
+employee.json
+hr_dashboard.png
