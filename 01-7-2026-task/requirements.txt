@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pydantic
+pyscopg2-binary
+sqlaclhemy
