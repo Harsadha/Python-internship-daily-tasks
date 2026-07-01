@@ -13,7 +13,7 @@ DB_PORT = os.getenv("DB_PORT")
 
 DATABASE_URL = f"postgresql+psycopg2://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL,pool_size=10,max_overflow=20,pool_timeout=30)
 SessionLocal = sessionmaker(bind=engine)
 
 def get_db():
