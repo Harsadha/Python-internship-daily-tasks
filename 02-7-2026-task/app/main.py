@@ -1,4 +1,4 @@
-# DAILY TASK- WEEK 5- DAY 2
+# DAILY TASK- WEEK 5- DAY 1
 '''
 ✓ PUT /employees/{id} — update (JWT protected)
 ✓ DELETE /employees/{id} — delete (JWT protected)
