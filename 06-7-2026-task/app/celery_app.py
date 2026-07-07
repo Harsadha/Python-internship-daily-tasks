@@ -11,7 +11,7 @@ celery_app = Celery(
     backend=os.getenv("REDIS_URL")
 )
 
-celery_app.conf.timezone = "Asia/Kolkata"
+celery_app.conf.timezone = "Asia/Bengaluru"
 
 celery_app.conf.beat_schedule = {
     "department-summary": {
