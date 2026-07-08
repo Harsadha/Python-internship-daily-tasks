@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+/venv/
+*.log
+celerybeat-schedule
+celerybeat-schedule-shm
+celerybeat-schedule-wal
+reports/
+backups/
